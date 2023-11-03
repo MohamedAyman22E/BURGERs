@@ -12,9 +12,14 @@
     <title>Document</title>
   </head>
   <body class="">
+    <div
+      class="toTop fixed -bottom-[70px] right-7 bg-secondaryColor py-3 px-4 rounded-full duration-700 z-50"
+    >
+      <i class="fa-solid fa-arrow-up text-black font-bold text-xl"></i>
+    </div>
     <!-- start header -->
     <header
-      class="w-full fixed top-0 left-0 py-3 px-[7%] bg-primaryColor z-50"
+      class="w-full fixed top-0 left-0 py-3 px-[7%] bg-primaryColor z-50 dark:bg-black"
       id="header"
     >
       <nav class="flex items-center justify-between">
@@ -25,7 +30,7 @@
         </div>
         <div class="810:flex gap-4 items-center" id="nav-menu">
           <ul
-            class="navList bg-primaryColor hidden 810:flex 810:static 280:absolute 280:top-[80%] 280:left-[0%] 280:border-y-2 280:border-secondaryColor 280:w-full 280:mx-auto 280:text-center 280:py-3 810:p-0 810:border-none"
+            class="navList bg-primaryColor dark:bg-black hidden 810:flex 810:static 280:absolute 280:top-[80%] 280:left-[0%] 280:border-y-2 280:border-secondaryColor 280:w-full 280:mx-auto 280:text-center 280:py-3 810:p-0 810:border-none"
           >
             <li class="mx-2 280:my-6 group">
               <a
@@ -64,7 +69,7 @@
             </li>
           </ul>
           <div class="flex gap-4">
-            <div class="icon_menu">
+            <div class="icon_menu theme__toggle" id="theme__toggle">
               <i class="fa-solid fa-moon text-[20px] cursor-pointer"></i>
             </div>
             <div
@@ -199,7 +204,7 @@
         class="flex 810:flex-row 810:mt-[50px] 810:items-start 810:justify-center px-[9%] gap-4 280:flex-col 280:mt-20"
       >
         <div
-          class="flex 500:flex-row 500:items-start 500:justify-center bg-primaryColorLight 810:w-[50%] p-6 rounded-[10px] 280:flex-col"
+          class="flex 500:flex-row 500:items-start 500:justify-center dark:bg-darkColorLight bg-primaryColorLight 810:w-[50%] p-6 rounded-[10px] 280:flex-col"
         >
           <div class="810:w-[70%] 280:w-[100%] 280:order-2">
             <span class="text-secondaryColor">payday promo</span>
@@ -219,7 +224,7 @@
           </div>
         </div>
         <div
-          class="flex 500:flex-row 500:items-start 500:justify-center bg-primaryColorLight 810:w-[50%] p-6 rounded-[10px] 280:flex-col"
+          class="flex 500:flex-row 500:items-start 500:justify-center dark:bg-darkColorLight bg-primaryColorLight 810:w-[50%] p-6 rounded-[10px] 280:flex-col"
         >
           <div class="810:w-[70%] 280:w-[100%] 280:order-2">
             <span class="text-secondaryColor">payday promo</span>
@@ -296,16 +301,28 @@
           <ul
             class="gap-6 grid 810:grid-cols-4 500:grid-cols-3 350:grid-cols-2 280:grid-cols-1 1200:w-[60%] 810:w-[80%] 500:w-[80%] m-auto"
           >
-            <li data-taps="all" class="btn text-xl bg-primaryColorLight active">
+            <li
+              data-taps="all"
+              class="btn text-xl bg-primaryColorLight dark:bg-darkColorLight active"
+            >
               all
             </li>
-            <li data-taps="food" class="btn text-xl bg-primaryColorLight">
+            <li
+              data-taps="food"
+              class="btn text-xl bg-primaryColorLight dark:bg-darkColorLight"
+            >
               food
             </li>
-            <li data-taps="snack" class="btn text-xl bg-primaryColorLight">
+            <li
+              data-taps="snack"
+              class="btn text-xl bg-primaryColorLight dark:bg-darkColorLight"
+            >
               snack
             </li>
-            <li data-taps="beverage" class="btn text-xl bg-primaryColorLight">
+            <li
+              data-taps="beverage"
+              class="btn text-xl bg-primaryColorLight dark:bg-darkColorLight"
+            >
               beverage
             </li>
           </ul>
@@ -315,7 +332,7 @@
         >
           <li class="box item_wrap" data-category="food">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/burger-1.png"
@@ -337,7 +354,7 @@
           </li>
           <li class="box item_wrap" data-category="food">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/burger-2.png"
@@ -359,7 +376,7 @@
           </li>
           <li class="box item_wrap" data-category="food">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/burger-3.png"
@@ -381,7 +398,7 @@
           </li>
           <li class="box item_wrap" data-category="food">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/burger-4.png"
@@ -403,7 +420,7 @@
           </li>
           <li class="box item_wrap" data-category="food">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/burger-5.png"
@@ -425,7 +442,7 @@
           </li>
           <li class="box item_wrap" data-category="snack">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/burger-6.png"
@@ -447,7 +464,7 @@
           </li>
           <li class="box item_wrap" data-category="snack">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/beverage-1.png"
@@ -469,7 +486,7 @@
           </li>
           <li class="box item_wrap" data-category="snack">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/beverage-2.png"
@@ -491,7 +508,7 @@
           </li>
           <li class="box item_wrap" data-category="snack">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/beverage-3.png"
@@ -513,7 +530,7 @@
           </li>
           <li class="box item_wrap" data-category="snack">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/beverage-4.png"
@@ -535,7 +552,7 @@
           </li>
           <li class="box item_wrap" data-category="beverage">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/beverage-5.png"
@@ -557,7 +574,7 @@
           </li>
           <li class="box item_wrap" data-category="beverage">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/snack-1.png"
@@ -579,7 +596,7 @@
           </li>
           <li class="box item_wrap" data-category="beverage">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/snack-2.png"
@@ -601,7 +618,7 @@
           </li>
           <li class="box item_wrap" data-category="beverage">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/snack-3.png"
@@ -623,7 +640,7 @@
           </li>
           <li class="box item_wrap" data-category="beverage">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/snack-4.png"
@@ -645,7 +662,7 @@
           </li>
           <li class="box item_wrap" data-category="beverage">
             <div
-              class="img py-8 bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
+              class="img py-8 dark:bg-darkColorLight bg-primaryColorLight rounded-[25px] hover:bg-secondaryColor duration-500 h-[160px] 350:h-[200px]"
             >
               <img
                 src="img/snack-5.png"
@@ -685,7 +702,7 @@
       <div class="swiper mySwiper">
         <ul class="flex flex-row m-auto mt-[60px] swiper-wrapper">
           <li
-            class="box bg-primaryColorLight p-[20px] rounded-[15px] swiper-slide"
+            class="box dark:bg-darkColorLight bg-primaryColorLight p-[20px] rounded-[15px] swiper-slide"
           >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
@@ -711,7 +728,7 @@
             </div>
           </li>
           <li
-            class="box bg-primaryColorLight p-[20px] rounded-[15px] swiper-slide"
+            class="box dark:bg-darkColorLight bg-primaryColorLight p-[20px] rounded-[15px] swiper-slide"
           >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
@@ -737,7 +754,7 @@
             </div>
           </li>
           <li
-            class="box bg-primaryColorLight p-[20px] rounded-[15px] swiper-slide"
+            class="box dark:bg-darkColorLight bg-primaryColorLight p-[20px] rounded-[15px] swiper-slide"
           >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
@@ -763,7 +780,7 @@
             </div>
           </li>
           <li
-            class="box bg-primaryColorLight p-[20px] rounded-[15px] swiper-slide"
+            class="box dark:bg-darkColorLight bg-primaryColorLight p-[20px] rounded-[15px] swiper-slide"
           >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
@@ -789,7 +806,7 @@
             </div>
           </li>
           <li
-            class="box bg-primaryColorLight p-[20px] rounded-[15px] swiper-slide"
+            class="box dark:bg-darkColorLight bg-primaryColorLight p-[20px] rounded-[15px] swiper-slide"
           >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique

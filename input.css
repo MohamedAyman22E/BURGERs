@@ -29,3 +29,6 @@
 .ulFilter .box.hide {
   @apply hidden;
 }
+.toTop.active {
+  @apply bottom-3;
+}

@@ -66,3 +66,46 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+let toTop = document.querySelector(".toTop");
+window.addEventListener("scroll", () => {
+  toTop.classList.toggle("active", window.scrollY > 100);
+});
+toTop.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+let theme__toggle = document.getElementById("theme__toggle");
+let theme__toggleI = document.querySelector(".theme__toggle i");
+let html = document.querySelector("html");
+if (localStorage.getItem("mode") == "dark") {
+  darkMode();
+} else {
+  lightMode();
+}
+theme__toggle.addEventListener("click", () => {
+  if (localStorage.getItem("mode") == "light") {
+    darkMode();
+  } else {
+    lightMode();
+  }
+});
+function darkMode() {
+  html.classList.add("dark");
+  localStorage.setItem("mode", "dark");
+  if (theme__toggleI.classList.contains("fa-moon")) {
+    theme__toggleI.classList.replace("fa-moon", "fa-sun");
+  } else {
+    theme__toggleI.classList.replace("fa-sun", "fa-moon");
+  }
+}
+function lightMode() {
+  html.classList.remove("dark");
+  localStorage.setItem("mode", "light");
+  if (theme__toggleI.classList.contains("fa-moon")) {
+    theme__toggleI.classList.replace("fa-moon", "fa-sun");
+  } else {
+    theme__toggleI.classList.replace("fa-sun", "fa-moon");
+  }
+}
